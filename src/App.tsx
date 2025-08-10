@@ -4,7 +4,7 @@ import {
   Table, TableHead, TableRow, TableHeaderCell, TableBody, TableCell,
   Badge, Select, SelectItem, Flex, BadgeDelta
 } from "@tremor/react";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 /** ---------- Types ---------- */
 type AttrType = "text" | "number" | "boolean" | "select";
@@ -132,7 +132,6 @@ export default function App() {
 
   const entityLabelPlural = config.entityLabelPlural || "Entità";
   const entityLabelSingular = config.entityLabelSingular || "Entità";
-  const wsById = useMemo(() => Object.fromEntries(workstations.map(w => [w.id, w])), [workstations]);
 
   /** ----- Handlers base ----- */
   const addWorkstation = () => {
@@ -514,7 +513,7 @@ export default function App() {
                 </div>
 
                 <div className="mt-6">
-                  <Title level={3}>Attributi attuali</Title>
+                  <Title>Attributi attuali</Title>
                   <div className="mt-3 space-y-2">
                     {config.attributes.map((a) => (
                       <div key={a.key} className="flex items-center justify-between border rounded-lg px-3 py-2">
