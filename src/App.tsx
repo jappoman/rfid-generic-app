@@ -18,21 +18,12 @@ export default function App() {
         <TabGroup>
           <TabList>
             <Tab>Dashboard</Tab>
-            <Tab>Statistiche</Tab>
             <Tab>Configurator</Tab>
           </TabList>
 
           <TabPanels>
             <TabPanel>
               <Dashboard />
-            </TabPanel>
-
-            <TabPanel>
-              {/* Placeholder: qui monterai il tuo pannello statistiche */}
-              <Card>
-                <Title>Statistiche</Title>
-                <Text className="mt-2">In arrivo 🚧 — qui potrai aggiungere grafici, filtri e report.</Text>
-              </Card>
             </TabPanel>
 
             <TabPanel>
