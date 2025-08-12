@@ -5,8 +5,8 @@ import {
 import { AppStoreProvider } from "./state/store";
 
 // feature tabs
-import Dashboard from "./features/dashboard/Dashboard";
-import Configurator from "./features/configurator/Configurator";
+import { Dashboard } from "./features/dashboard";
+import { Configurator } from "./features/configurator";
 
 export default function App() {
   return (
