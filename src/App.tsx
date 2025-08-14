@@ -1,6 +1,6 @@
 // src/App.tsx
 import {
-  Card, Title, Text, TabGroup, TabList, Tab, TabPanels, TabPanel,
+  Title, Text, TabGroup, TabList, Tab, TabPanels, TabPanel,
 } from "@tremor/react";
 import { AppStoreProvider } from "./state/store";
 
